@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 8</title>
+
+        <style>
+            /* Selecionar todos os elementos */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/36a4db5b-dec2-458a-a1c0-662fa60e7473/79f407c4-a804-45f9-a13a-bf0a66245315/BR-pt-20240820-TRIFECTA-perspective_WEB_fa304855-b015-4f00-8619-63e1a0920714_large.jpg);
+                
+            }
+
+            #heading {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #heading nav{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0px auto;
+            }
+
+            #heading nav h1{
+                padding: 20px 0px;
+                font-size: 40px;
+                text-transform: uppercase;
+                color: rgb(229, 9, 20);
+                font-family: sans-serif;
+            }
+
+            #heading nav div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #btn_entrar{
+                background: rgb(229, 9, 20);
+                border: none;
+                color: #fff;
+                padding: 6px 15px;
+                border-radius: 3px;
+            }
+
+            #seletor_idioma{
+                background: none;
+                color: #fff;
+                border: solid 1px #fff;
+                border-radius: 3px ;
+                padding: 4px 15px;
+            }
+
+            #seletor_idioma option{
+                color: #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="heading">
+            <nav>
+                <h1>Netflix</h1>
+                <div>
+                    <select name="seletor_idioma" id="seletor_idioma">
+                        <option value="portugues">Português</option>
+                        <option value="english">English</option>
+                    </select>
+                    <button id="btn_entrar">Entrar</button>
+                </div>
+            </nav>
+        </header>
+    </body>
+</html>
