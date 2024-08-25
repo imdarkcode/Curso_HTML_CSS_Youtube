@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 09</title>
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Conteúdo */
+            #section-content{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+
+            /* Conteúdo com padding (aumenta o tamanho do elemento sem alterar o conteúdo) */
+            #section-padding{
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                background-color: green;
+            }
+
+            /* Conteúdo com borda (cria uma borda em volta do conteúdo) */
+            #section-border{
+                width: 200px;
+                height: 200px;
+                border: 5px solid black;
+                background-color: cyan;
+            }
+
+            /* Conteúdo com margin (cria um espaçamento em volta do conteúdo, margin de elementos diferentes não se somam) */
+            #section-margin{
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                background-color: yellow;
+            }
+
+            /* Conteúdo com border-box (impede que padding ou border altere o tamanho do conteúdo) */
+            #section-border-box{
+                box-sizing: border-box;
+                width: 200px;
+                height: 200px;
+                padding: 50px;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Content</h1>
+        <section id="section-content">
+            200x200
+        </section>
+
+        <h1>Padding</h1>
+        <section id="section-padding">
+            200x200
+        </section>
+
+        <h1>Border</h1>
+        <section id="section-border">
+            200x200
+        </section>
+
+        <h1>Margin</h1>
+        <section id="section-margin">
+            200x200
+        </section>
+
+        <h1>Padding e Border-box</h1>
+        <section id="section-border-box">
+            200x200
+        </section>
+    </body>
+</html>

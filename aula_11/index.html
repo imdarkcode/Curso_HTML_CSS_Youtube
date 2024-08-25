@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 11</title>
+
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+
+            #responsive-table{ /* Criar barra de scroll caso o tamanho da tela seja menor que da tabela */
+                max-width: 100%;
+                overflow-x: auto;
+            }
+
+            table{
+                border-collapse: collapse; /* Unir as bordas da tabela */
+                text-align: center;
+                width: 800px;
+            }
+
+            table thead, table tfoot{
+                background-color: #cccccc;
+            }
+    
+            table td, table th{
+                border: 1px solid #080808;
+                padding: 5px 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="responsive-table">
+            <table> <!-- Tabela -->
+                <caption>Descrição da tebela</caption> <!-- Descrição da tabela -->
+
+                <thead> <!-- Cabeçalho da tabela -->
+                    <tr> <!-- Linha da tabela -->
+                        <th>Título 1</th> <!-- Coluna do cabeçlho da tabela -->
+                        <th>Título 2</th>
+                        <th>Título 3</th>
+                    </tr>
+                </thead>
+
+                <tbody> <!-- Corpo da tabela -->
+                    <tr>
+                        <td>Corpo 1</td> <!-- Coluna do corpo da tabela -->
+                        <td>Corpo 2</td>
+                        <td rowspan="2">Corpo 3</td> <!-- rowspan: número de linhas que esta linha irá ocupar -->
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Corpo 1 e 2</td> <!-- colspan: número de colunas que esta coluna irá ocupar -->
+                    </tr>
+                </tbody>
+
+                <tfoot> <!-- Rodapé da tabela -->
+                    <tr>
+                        <td>Rodapé 1</td>
+                        <td>Rodapé 2</td>
+                        <td>Rodapé 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
