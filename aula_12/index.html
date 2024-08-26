@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 12</title>
+
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+
+            fieldset{
+                width: 200px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Formulário</h1>
+        <form action="#" method="get"> <!-- Formulário | action: local que o formulário será enviado | method: como será enviado as informações -->
+            <label for="text">Texto</label> <!-- Rótulo para o campo | for: o campo que o label está direcionado -->
+            <input type="text" name="text" id="text" placeholder="Placeholder" required> <!-- Campo de texto | placeholder: texto de exemplo | required: obriga preencher o campo antes de enviar -->
+
+            <br>
+            <label for="nome">Checkbox</label>
+            <input type="checkbox" name="checkbox" id="checkbox"> <!-- Campo de opção multipla escolha -->
+
+            <fieldset> <!-- Grupo de elementos de formulário -->
+                <legend>Legenda</legend> <!-- Legenda para o grupo -->
+                <label for="nome">Opção 1</label>
+                <input type="radio" name="radio" id="radio"> <!-- Campo de opção única -->
+                <br>
+                <label for="nome">Opção 2</label>
+                <input type="radio" name="radio" id="radio">
+                <br>
+                <label for="nome">Opção 3</label>
+                <input type="radio" name="radio" id="radio">
+            </fieldset>
+
+            <label for="date">Data</label>
+            <input type="date" name="data" id="data"> <!-- Campo de data -->
+
+            <br>
+            <label for="datetime">Data e Hora</label>
+            <input type="datetime" name="datetime" id="datetime"> <!-- Campo de data e hora -->
+
+            <br>
+            <label for="time">Hora</label>
+            <input type="time" name="time" id="time"> <!-- Campo de hora -->
+
+            <br>
+            <label for="color">Cor</label>
+            <input type="color" name="color" id="color"> <!-- Campo de seleção de cor -->
+
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"> <!-- Campo de email -->
+
+            <br>
+            <label for="file">Arquivo</label>
+            <input type="file" name="file" id="file" accept=".png" multiple> <!-- Campo de arquivo | accept: tipo de arquivo que o campo aceita | multiple: selecionar mais de um arquivo -->
+
+            <br>
+            <label for="number">Número</label>
+            <input type="number" name="number" id="number" min="0" max="50" step="2"> <!-- Campo de números | min/max: mínimo e máximo do número | step: intervalo entre os números -->
+
+            <br>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password"> <!-- Campo de senha -->
+
+            <br>
+            <label for="range">Distância</label>
+            <input type="range" name="range" id="range"> <!-- Campo de distância -->
+
+            <br>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url"> <!-- Campo de Url -->
+
+            <br>
+            <label for="select">Selecionar</label> 
+            <select name="select" id="select"> <!-- Campo de seleção -->
+                <optgroup> <!-- Grupo de opções -->
+                    <option value="">Opção 1</option>  <!-- Opção do select -->
+                    <option value="">Opção 2</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <textarea name="textarea" id="textarea"></textarea> <!-- Área de texto -->
+
+            <br>
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+            <button type="reset">Resetar</button> <!-- Botão para resetar os campos -->
+        </form>
+    </body>
+</html>
