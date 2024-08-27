@@ -1,0 +1,12 @@
+.adjacent-selection h1+p { /* Seleciona um elemento que estiver depois de outro */
+    color: red;
+}
+
+.general-selection h1~p { /* Seleciona todos os elemento que estiverem depois de outro*/
+    color: green;
+}
+
+[cor="azul"] { /* Seleciona por atributo */
+    color: blue;
+}
+
